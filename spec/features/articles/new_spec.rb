@@ -1,8 +1,8 @@
-#spec/features/articles/index_spec 
+#spec/features/articles/new_spec 
 
 require "rails_helper"
 
-RSpec.describe "Article show page" do
+RSpec.describe "Article new page" do
   describe 'display' do 
     describe "user can create new article" do
       it "creates a new article" do
