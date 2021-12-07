@@ -2,6 +2,6 @@ require "rails_helper"
 
 describe Comment, type: :model do
   describe "validations" do
-    it {should belont_to(:article)}
+    it {should belong_to(:article)}
   end
 end
