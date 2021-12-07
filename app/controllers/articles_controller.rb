@@ -6,13 +6,15 @@ class ArticlesController < ApplicationController
   end
 
   def show
+    @comment = Comment.new 
+    @comment.article_id = @article.id 
   end
 
   def new
     @article = Article.new
   end
 
-  def create 
+  def create
     @article = Article.new(article_params)
     @article.save 
     
