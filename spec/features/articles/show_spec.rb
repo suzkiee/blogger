@@ -31,7 +31,7 @@ RSpec.describe "Article show page" do
           visit article_path(article)
 
           fill_in "comment[author_name]", with: "ME!"
-          fill_in "comment[body]", with: "So many thoughts on this article"
+          fill_in "comment[body]", with: "So many thoughts on this article."
           click_on "Submit"
 
           expect(current_path).to eq(article_path(article))
